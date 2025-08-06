@@ -55,6 +55,12 @@ main>section {
   margin-top: 130px;
 }
 
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
 /* header styles */
 
 
@@ -127,11 +133,6 @@ main>section {
   max-width: 530px;
 }
 
-.feature-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 24px 0;
-}
 
 #quick-list {
   font-weight: 500;
@@ -140,6 +141,40 @@ main>section {
 .feature-description {
   margin-bottom: 32px;
   line-height: 26px;
+}
+
+/* some facts related styles */
+
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.facts-description{
+  max-width: 540px;
+  margin-bottom: 100px;
+}
+
+.fact{
+  border: 1px solid #FF900E;
+  border-radius: 8px;  
+  width: 240px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #424242;
+}
+
+.fact-name{
+  font-size: 1.25rem;
+  font-family: 600;
+  color: #727272;
 }
 
 /* responsive media query */
