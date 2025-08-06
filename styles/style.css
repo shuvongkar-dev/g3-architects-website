@@ -145,6 +145,10 @@ main>section {
 
 /* some facts related styles */
 
+.facts-content{
+  max-width: 540px;
+}
+
 .facts-container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -188,11 +192,16 @@ main>section {
     align-items: center;
   }
 
-  .team-img-container{
+  .team-img-container, .facts-container{
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .Our-Feature{
+  .facts-container{
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .Our-Feature, .facts-content{
     margin-left: 20px;
   }
 
@@ -206,8 +215,15 @@ main>section {
     flex-direction: column;
   }
 
-  .Our-Feature{
+  .Our-Feature, .facts-content{
     margin: 50px auto;
+    text-align: center;
+  }
+
+  .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 24px;
   }
 
 }
